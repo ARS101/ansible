@@ -9,3 +9,4 @@
         - node
   tasks:
     - include: tasks/zsh.yml
+    - include: tasks/node.yml
