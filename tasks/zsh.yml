@@ -20,4 +20,4 @@
 - name: Include plugin in the settings
   shell: sed -i -E "s/plugins=\((.*)\)/plugins=(\1 zsh-autosuggestions)/g" ~/.zshrc
   tags:
-    - node
+    - zsh
