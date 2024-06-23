@@ -1,8 +1,5 @@
 - hosts: localhost
   become: true
-  vars:
-    source_key: "./test_ssh/sshfile.txt"
-    dest_key: "{{ lookup('env', 'HOME') }}/test_ssh/sshfile.txt"
   pre_tasks:
     - name: Update cache
       apt:
@@ -13,4 +10,3 @@
   tasks:
     - include: tasks/zsh.yml
     - include: tasks/node.yml
-    - include: tasks/ssh.yml
